@@ -1,7 +1,16 @@
 import * as React from "react";
-import "../assets/App.css";
+import AddTodo from "../containers/AddTodo";
+import VisibleTodoList from "../containers/VisibleTodoList";
+import Footer from "./Footer";
 
 const component: React.FC = () => {
-  return <div />;
+  return (
+    <div>
+      <AddTodo />
+      <VisibleTodoList />
+      <Footer />
+    </div>
+  );
 };
+
 export default component;
